@@ -14,6 +14,18 @@ public class Teste {
 
 
         }
+        int fatorial = 1;
+        int resultado = 1;
+
+        for(int i = 1; i <= 0; i ++){
+            resultado ++;
+
+            fatorial = fatorial * (resultado - 1);
+
+        }
+        System.out.println(fatorial);
+
+
 
 
 
