@@ -1,16 +1,20 @@
-package exercicios;
+package chapter.four;
 
 public class Test {
 
     public static void main(String[] args){
 
         Conta conta = new Conta();
+        Data data = new Data();
 
         conta.nomeTitular = "Antônio";
         conta.numeroDaConta = 465;
         conta.agencia = "462";
         conta.saldo = 100;
-        conta.dataAberturaConta = "05/06/1999";
+        data.dataFormatada(1,05,2020);
+
+
+
 
         conta.deposita(150);
         System.out.println(conta.recuperaDadosParaImpressao());
@@ -26,8 +30,10 @@ public class Test {
         conta.numeroDaConta = 465;
         conta.agencia = "462";
         conta.saldo = 100;
-        conta.dataAberturaConta = "05/06/1999";
-        conta = conta2;
+
+        conta2 = conta;
+
+
 
         if	(conta	==	conta2)	{
             System.out.println("iguais");

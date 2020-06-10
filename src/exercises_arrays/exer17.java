@@ -16,13 +16,7 @@ public class exer17 {
 			idades[i] = scan.nextInt();
 			
 		}
-		
-		int 	
-		
-	
-		System.out.println("Quantidadade de idades > 35 é de: " + superior35);
-		
-		System.out.println("Quantidadade de idades < 35 é de: " + menor35 );
+
 				
 		
 	}
