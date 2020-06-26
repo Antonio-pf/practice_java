@@ -10,17 +10,18 @@ public class Test {
         conta.nomeTitular = "Antônio";
         conta.numeroDaConta = 465;
         conta.agencia = "462";
-        conta.saldo = 100;
+        conta.deposita(1000);
         data.dataFormatada(1,05,2020);
 
 
 
-
-        conta.deposita(150);
-        System.out.println(conta.recuperaDadosParaImpressao());
+        conta.sacar(0);
+        conta.deposita(0);
+        //System.out.println(conta.recuperaDadosParaImpressao());
         System.out.println();
 
-        System.out.println("Saldo da conta: $" + conta.saldo);
+        //System.out.println("Saldo da conta: $" + conta.saldo);
+        System.out.println("Saldo " + conta.pegaSaldo());
         System.out.println("Rendimento mensal: $" + conta.calculaRendimento());
 
 
@@ -29,7 +30,7 @@ public class Test {
         conta.nomeTitular = "Antônio";
         conta.numeroDaConta = 465;
         conta.agencia = "462";
-        conta.saldo = 100;
+        //conta.saldo = 100;
 
         conta2 = conta;
 
