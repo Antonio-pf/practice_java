@@ -1,4 +1,4 @@
-package chapter.four;
+package br.com.caelum.contas.modelo;
 
 public class Data{
 
@@ -13,5 +13,6 @@ public class Data{
 
             return formatoData;
         }
-    }
+
+}
 
