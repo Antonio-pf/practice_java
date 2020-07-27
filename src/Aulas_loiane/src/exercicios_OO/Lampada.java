@@ -2,9 +2,43 @@ package exercicios_OO;
 
 public class Lampada {
 
-    public boolean estado(boolean ligada){
+    private String modelo;
+    private String tesao;
+    private String cor;
+    private String tipoLuz;
+    private String [] tipos;
+    private int potencia;
+    private int garantiaMeses;
+    private boolean tipoAbajur;
+    private boolean ligada;
 
-        if(!ligada){
+
+    public boolean isLigada() {
+        return ligada;
+    }
+
+    public void setLigada(boolean ligada) {
+        this.ligada = ligada;
+    }
+
+    public boolean isTipoAbajur() {
+        return tipoAbajur;
+    }
+
+    public void setTipoAbajur(boolean tipoAbajur) {
+        this.tipoAbajur = tipoAbajur;
+    }
+
+    public void ligar(){
+        setLigada(true);
+    }
+
+    public void desligada(){
+        setLigada(false);
+    }
+    public boolean estado(){
+
+        if(isLigada()){
 
             System.out.println("Lâmpada ligada");
             return true;
@@ -14,6 +48,12 @@ public class Lampada {
         }
 
     }
-
+    public void mudarEstado(){
+        if(isLigada()){
+            desligada();
+        }else {
+            ligar();
+        }
+    }
 
 }
