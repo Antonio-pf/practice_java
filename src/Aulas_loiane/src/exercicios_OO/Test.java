@@ -6,13 +6,20 @@ public class Test {
 
         Lampada lampada = new Lampada();
         Conta conta = new Conta();
+        Aluno aluno = new Aluno();
 
-        lampada.estado(false);
+        lampada.ligar();
+        lampada.estado();
+        lampada.desligada();
+        lampada.estado();
+        lampada.mudarEstado();
+        lampada.estado();
+
+        System.out.println();
 
         conta.setSaldo(600);
         conta.saque(3000);
         conta.deposita(400);
-
 
 
 
