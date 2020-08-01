@@ -1,15 +1,15 @@
-package exercicios_OO;
+package exercicios_OO.aula33.labs;
 
 public class Aluno {
 
     private String nome;
     private String matricula;
     private String nomeCurso;
-    private String[] disciplinas;
+    private String[] nomeDisciplinas;
     private double[][] notas;
 
     public Aluno() {
-        this.disciplinas = new String[3];
+        this.nomeDisciplinas = new String[3];
         this.notas = new double[3][4];
 
     }
@@ -19,9 +19,17 @@ public class Aluno {
         this.nome = nome;
         this.matricula = matricula;
         this.nomeCurso = nomeCurso;
-        this.disciplinas = new String[3];
+        this.nomeDisciplinas = new String[3];
         this.notas = new double[3][4];
 
+    }
+
+    public double[][] getNotas() {
+        return notas;
+    }
+
+    public void setNotas(double[][] notas) {
+        this.notas = notas;
     }
 
     public String getNomeCurso() {
@@ -48,12 +56,12 @@ public class Aluno {
         this.matricula = matricula;
     }
 
-    public String[] getDisciplinas() {
-        return disciplinas;
+    public String[] getNomeDisciplinas() {
+        return nomeDisciplinas;
     }
 
-    public void setDisciplinas(String[] disciplinas) {
-        this.disciplinas = disciplinas;
+    public void setNomeDisciplinas(String[] notasDisciplinas) {
+        this.nomeDisciplinas = notasDisciplinas;
     }
 
     public void informacaoAluno() {
@@ -64,7 +72,7 @@ public class Aluno {
 
 
         for (int i = 0; i < notas.length; i++) {
-            System.out.println("Notas : " + disciplinas[i]);
+            System.out.println("Notas : " + nomeDisciplinas[i]);
 
 
             for (int j = 0; j < notas[i].length; j++) {
@@ -98,4 +106,17 @@ public class Aluno {
         double media = soma / 4;
         return media;
     }
+
+    public void setDisciplinaPosicao(int pos, String nomeDisciplina) {
+
+        this.nomeDisciplinas[pos] = nomeDisciplina;
+
+    }
+
+    public void setPosIJ(int posI, int posJ, double nota){
+
+        this.notas [posI][posJ] = nota;
+
+    }
+
 }
