@@ -19,11 +19,7 @@ public class exer02 {
 
             }
             System.out.println();
-
-
         }
-
-        
 
         float menor  = 0;
         float maior = 0;
@@ -36,17 +32,10 @@ public class exer02 {
                 }else if (arrayNumbers [i][j] < menor){
                     menor = arrayNumbers[i][j];
                 }
-                }
-
-
             }
+        }
 
         System.out.println("Menor: " + menor + " Maior: " + maior);
-
-
-
-
-
 
     }
 }
