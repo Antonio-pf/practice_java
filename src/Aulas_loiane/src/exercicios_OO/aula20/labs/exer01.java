@@ -12,7 +12,7 @@ public class exer01 {
 
         for (int i = 0; i < numerosAleatórios.length; i++) {
             for (int j = 0; j < numerosAleatórios[i].length; j++) {
-                numerosAleatórios[i][j] = numeroRandom.nextInt(100);
+                numerosAleatórios[i][j] = numeroRandom.nextInt(10);
                 System.out.println("Linha: " + i + " Coluna: " + j + " Valor: " + numerosAleatórios[i][j] );
 
             }
@@ -38,7 +38,7 @@ public class exer01 {
         }
 
         System.out.println();
-        System.out.println("Maior valor!!!!");
+        System.out.println("       Maior valor!!!!");
         System.out.println("Linha: " + linha + " Coluna: " + coluna + " Valor: " + maior);
 
 
