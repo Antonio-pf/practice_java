@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class exer02 {
 
-    public static void main(String [] arg) {
+    public static void main(String[] arg) {
 
         Scanner scan = new Scanner(System.in);
 
