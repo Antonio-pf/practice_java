@@ -9,7 +9,9 @@ public class TesteCalculadora {
         //calculadora.divisao(4,5);
 
 
-        MinhaCalculadora.soma(56,5);
+        //MinhaCalculadora.soma(56,5);
+        MinhaCalculadora.fatorial(3);
+
 
 
     }
