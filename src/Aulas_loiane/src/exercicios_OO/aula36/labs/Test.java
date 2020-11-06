@@ -6,6 +6,8 @@ public class Test {
 
         Contato contato = new Contato();
         Endereco endereco = new Endereco();
+        Player player = new Player();
+        Team team = new Team();
 
         contato.setNome("Juan");
         contato.setTelefone("156-656-86");
@@ -25,6 +27,25 @@ public class Test {
         if(contato != null && contato.getEndereco() != null){// trata o erro caso não tenha setado
 
             System.out.println(contato.getEndereco().getCidade());
+
+        }
+
+        //team.setPlayer(player); //
+
+        player.setAge(21);
+        player.setGender("masculino");
+        player.setHeigth("1.89");
+        player.setName("Antrovis");
+        player.setPosition("Armador");
+        player.setWeigth("79.05kg");
+
+        team.setLocation("Amápa");
+        team.setName("Blumenau");
+        team.getPlayer().getName();
+
+        if(team != null && team.getPlayer()  != null){
+
+            System.out.println(team.getPlayer().getName());
 
         }
     }
