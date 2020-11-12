@@ -2,7 +2,7 @@ package exercicios_OO.aula36.labs.exer;
 
 import java.util.Scanner;
 
-public class Teste {
+public class Teste01 {
 
     public static void main(String[] args){
 
