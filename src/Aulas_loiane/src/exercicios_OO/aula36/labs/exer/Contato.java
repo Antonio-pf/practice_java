@@ -5,6 +5,7 @@ public class Contato {
     private String nome;
     private String telefone;
     private String email;
+    private Agenda agenda;
 
     public String getNome() {
         return nome;
@@ -30,11 +31,11 @@ public class Contato {
         this.email = email;
     }
 
-    public void informacaoDosContatos(){
-        System.out.println("Infomação dos contatos: ");
-        System.out.println(this.nome);
-        System.out.println(this.telefone);
-        System.out.println(this.email);
+    public String informacaoDosContatos(){
 
+        return "Nome = " + this.nome + "; " +
+                "Telefone = " + this.telefone + "; " +
+                "Email = " + this.email;
+
+        }
     }
-}
