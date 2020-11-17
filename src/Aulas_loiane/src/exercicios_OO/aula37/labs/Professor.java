@@ -1,4 +1,4 @@
-package exercicios_OO.aula37.labs;
+package exercicios_OO.aula47.labs;
 
 public class Professor {
 }
