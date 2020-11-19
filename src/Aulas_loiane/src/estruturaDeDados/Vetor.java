@@ -38,6 +38,7 @@ public class Vetor {
           }
         }*/
 
+    //add elements in vector
     public boolean add(String element)  {
 
         if (this.scale < this.elements.length) {
@@ -52,6 +53,7 @@ public class Vetor {
 
     }
 
+    //Show only elements add
     @Override
     public String toString() {
 
@@ -76,6 +78,20 @@ public class Vetor {
     public int size(){
 
         return this.scale;
+
+    }
+
+    //Search position element
+    public String search(int position){
+
+
+        //denying, I have all the positions null
+        if (!(position >= 0 && position < size())){
+
+            throw new IllegalArgumentException("Invalid position");
+
+        }
+            return this.elements[position];
 
     }
 
