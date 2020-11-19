@@ -6,9 +6,10 @@ public class Test {
 
         Vetor vetor = new Vetor(2);
 
-       vetor.add("Juan");
-       vetor.add("Carlos");
-       vetor.add("Antônio");
+
+            vetor.add("Juan");
+            vetor.add("Carlos");
+            vetor.add("Antônio");
 
     }
 }
