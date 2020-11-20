@@ -82,7 +82,7 @@ public class Vetor {
     }
 
     //Search position element
-    public String search(int position){
+   /* public String search(int position){
 
 
         //denying, I have all the positions null
@@ -93,6 +93,20 @@ public class Vetor {
         }
             return this.elements[position];
 
+    }*/
+
+    //check if exist
+    public int search(String element){
+
+        for (int i = 0; i<this.size(); i ++){
+            if(this.elements[i].equalsIgnoreCase(element)){
+                return i;
+
+            }
+        }
+        return -1;
     }
 
-}
+
+
+    }
