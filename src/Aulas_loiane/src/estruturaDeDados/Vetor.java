@@ -53,6 +53,25 @@ public class Vetor {
 
     }
 
+    //choose position and add new element
+    public boolean add(int position, String element){
+
+        if (!(position >= 0 && position < size())){
+
+            throw new IllegalArgumentException("Invalid position");
+
+        }
+        //0 1 2 3 4 5 6 size
+        //A B F G G + +
+        for (int i = this.scale; i >= position; i--  ){
+            this.elements[i+1] = this.elements[i];
+        }
+        this.elements[position] = element;
+        this.scale++;
+
+        return true;
+    }
+
     //Show only elements add
     @Override
     public String toString() {
@@ -98,7 +117,7 @@ public class Vetor {
     //check if exist
     public int search(String element){
 
-        for (int i = 0; i<this.size(); i ++){
+        for (int i = 0; i<this.scale; i ++){
             if(this.elements[i].equalsIgnoreCase(element)){
                 return i;
 
@@ -106,6 +125,7 @@ public class Vetor {
         }
         return -1;
     }
+
 
 
 
