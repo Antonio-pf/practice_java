@@ -1,6 +1,6 @@
 package estruturaDeDados;
 
-public class Teste03 {
+public class Test03 {
 
     public static void main(String[] args) {
 
@@ -10,7 +10,7 @@ public class Teste03 {
         vetor.add("São José");
         vetor.add("Itobi");
 
-        System.out.println(vetor.search(3));
+        System.out.println(vetor.search("ca"));
 
 
     }
